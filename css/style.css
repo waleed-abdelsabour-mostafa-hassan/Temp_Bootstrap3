@@ -1,0 +1,1060 @@
+/* General Styles */
+
+body
+{
+    font-family: lucida sans;
+}
+.sections
+{
+    padding: 20px 0;
+}
+.overlay
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+}
+.section_header .section_title
+{
+    font-size: 40px;
+}
+.section_header .line
+{
+    width: 150px;
+    height: 2px;
+    background: #ddd;
+    margin: auto;
+}
+.section_header .line span
+{
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #7cb62f;
+    margin: auto;
+    position: relative;
+    bottom: 2px;
+    
+}
+.section_header p
+{
+    width: 50%;
+    color: #888;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+@media (max-width:575px)
+{
+    .section_header p
+    {
+        width: 80%;
+    }
+}
+/*  #7cb62f */
+/*Header Styles */
+header
+{
+    height: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+}
+header i.icon
+{
+    position: absolute;
+    right: 30px;
+    top: 33px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+header .logo h2
+{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+header nav .nav_list 
+{
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+header nav .nav_list .list a
+{
+    display: block;
+    padding: 15px;
+    margin: 9px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+header nav .nav_list .list a:hover
+{
+    color: #7cb62f;
+}
+.sticky
+{
+    background: #fff;
+    box-shadow: 0 2px 10px 0 #000;
+    color: #000;
+}
+.sticky .logo h2
+{
+    color: #000;
+}
+
+.sticky nav .nav_list .list a
+{
+    color: #000;
+}
+@media (max-width:575px)
+{
+    header
+    {
+        background: #87cefa;
+    }
+    header .logo h2
+    {
+        text-align: center;
+    }
+    header nav .nav_list
+    {
+        padding: 0;
+        display: none;
+        text-align: center;
+    }
+    header i.icon
+    {
+        display: block;
+    }
+}
+/************ Home section ********************/
+section.home
+{
+    height: 600px;
+    background-image: url('../images/home/skill-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+section.home .home_content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+section.home .home_title
+{
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+section.home .home_Desc
+{
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+section.home .button
+{
+    color: #fff;
+    background: #7cb62f;
+    width: 150px;
+    padding: 10px 0;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+section.home .button:hover
+{
+    color: #7cb62f;
+    background: #fff;
+}
+@media (max-width:575px)
+{
+    section.home .home_title
+    {
+        font-size: 35px;
+    }
+    section.home .button
+    {
+        margin-bottom: 20px;
+    }
+    
+}
+/**************** About Section ************************************/
+section.about .about_info h3
+{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+section.about .about_info h3 span
+{
+    color: #7cb62f;
+}
+section.about  .about_info .about_info_desc
+{
+    color: #888;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+section.about  .about_info .about_info_btn
+{
+     color: #fff;
+    background: #7cb62f;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-align: center;  
+    font-weight: bold;
+     margin-bottom: 20px;
+}
+section.about .about_img img
+{
+    width: 100%;
+    
+}
+@media (max-width:575px)
+{
+   .about .about_info h3
+    {
+       font-size: 20px;
+    }
+}
+@media (min-width:576px) and  (max-width:768px)
+{
+    .about .about_info
+    {
+        text-align: center
+    }
+}
+/**************************** services section **************************************/
+section.services
+{
+    height: auto;
+    background: #f7f7f7;
+}
+section.services .serv
+{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+section.services .serv i.icon
+{
+    background: #7cb62f;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #f6f6f6;
+    transition: all 0.3s ease-in-out;
+}
+section.services .serv .serv_title
+{
+    color: #888;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+section.services .serv .serv_desc
+{
+    font-size: 17px;
+    color: #999;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+section.services .serv:hover 
+{
+    background:#7cb62f;
+}
+section.services .serv:hover i.icon
+{
+    background:#fff;
+    color: #7cb62f
+}
+section.services .serv:hover .serv_title ,
+section.services .serv:hover .serv_desc
+{
+    color: #fff;
+}
+
+/****************************  statistics section *****************************************************/
+
+section.statistics
+{
+    height: 300px;
+    background-image: url(../images/stat/lap-stat.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+section.statistics .stat_info
+{
+    margin: 50px 0;
+}
+section.statistics .stat_info i , section.statistics .stat_info span
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #fff;
+}
+section.statistics .stat_info i.icon
+{
+    background: #7cb62f;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+section.statistics .stat_info span.timer
+{
+    font-size: 20px;
+}
+section.statistics .stat_info span.stat_info_title
+{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+@media (max-width:991px)
+{
+    section.statistics
+    {
+        height: 950px;
+    }
+}
+/************************************************** Porfolio Section *****************************************************/
+section.portfolio .buttons
+{
+    margin-bottom: 20px;
+}
+section.portfolio .buttons button 
+{
+    width: 100px;
+    background: #333;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+section.portfolio .Images img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+section.portfolio .view_more button
+{
+    width: 300px;
+    background:#333;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.active_btn
+{
+    background: #7cb62f ! important ;
+}
+
+/************************************* Exprets Section *********************************************************/
+
+section.Exprets
+{  
+    background: #4c4c4c;
+}
+section.Exprets .section_header .section_title
+{
+    color: #fff;
+}
+section.Exprets .progress_content
+{
+    margin-top: 20px;
+}
+section.Exprets .progress_content .progress
+{
+    width: 150px;
+    height: 150px;
+    background: none;
+    box-shadow: none;
+    margin: 0 auto;
+    position: relative;
+}
+section.Exprets .progress_content .progress > span
+{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+section.Exprets .progress_content .progress .progress_value
+{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    color: #fff;
+    background: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 135px;
+}
+section.Exprets .progress_content .progress .prgress_left 
+{
+    left: 0;
+}
+section.Exprets .progress_content .progress .prgress_right
+{
+    right: 0;
+}
+section.Exprets .progress_content .progress  .progress_bar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 10px;
+    border-style: solid;
+}
+section.Exprets .progress_content .progress.blue .progress_bar
+{
+    border-color: #049dff;
+}
+section.Exprets .progress_content .progress.yellow .progress_bar
+{
+    border-color: #fdba04;
+}
+section.Exprets .progress_content .progress .prgress_left  .progress_bar
+{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: left;
+}
+section.Exprets .progress_content .progress .prgress_right  .progress_bar
+{
+    right: 100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: right;
+    animation: load1 1.6s linear forwards;
+}
+section.Exprets .progress_content .progress.blue .prgress_left  .progress_bar
+{
+    animation: load2 1.5s linear forwards 1.6s;
+}
+section.Exprets .progress_content .progress.yellow .prgress_left  .progress_bar
+{
+    animation: load3 1s linear forwards 1.6s;
+}
+
+
+@keyframes load1
+{
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(180deg);
+    }
+}
+@keyframes load2
+{
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(144deg);
+    }
+}
+@keyframes load3
+{
+    0%
+    {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(90deg);
+    }
+}
+
+section.Exprets .progress_content .title
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/*************************************** Pricing Section ****************************************************/
+
+section.Pricing 
+{
+    background: #f7f7f7;
+}
+section.Pricing .Pricing_info
+{
+    background: #fff;
+}
+section.Pricing .Pricing_info .dolar
+{
+    font-size: 35px;
+    font-weight: bold;
+    background: #252525;
+    color: #fff;
+    transition: all 0.6s ease-in-out;
+}
+section.Pricing .Pricing_info .head
+{
+    background: #252525;
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 10px;
+    transition: all 0.6s ease-in-out;
+}
+section.Pricing .Pricing_info .title
+{
+    font-size: 20px;
+    padding-top: 25px ;
+}
+section.Pricing .Pricing_info .content
+{
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+}
+section.Pricing .Pricing_info .btn
+{
+    width: 100%;
+    background: #222;
+    color: #fff;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: all 0.6s ease-in-out;
+}
+section.Pricing .Pricing_info:hover  .dolar ,
+section.Pricing .Pricing_info:hover  .head ,
+section.Pricing .Pricing_info:hover  .btn
+{
+    background: #7cb62f;
+}
+ /********************************************* Team Section ********************************************************/
+section.Team .team_info 
+{
+    text-align: center;
+}
+section.Team .team_info .team_info_name
+{
+    margin: 5px 0;
+}
+section.Team .team_info .team_info_desc
+{
+    display: block;
+    margin-bottom: 5px ;
+}
+section.Team .team_info_media
+{
+    position: relative;
+    background: #252525;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+section.Team .team_info_media i
+{
+    position: relative;
+    z-index: 15;
+}
+section.Team .team_info .team_info_media .bg
+{
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+section.Team .team_info:hover .bg
+{
+    width: 100%;   
+    background: #7cb62f;
+}
+
+/************************************ Business Section **************************************************/
+section.Business
+{
+    height: 250px;
+    background: url('../images/stat/lap-stat.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+section.Business .bus_info
+{
+    margin: 40px 0;
+}
+section.Business .bus_info .bus_info_title
+{
+    color: #fff;
+    font-size: 35px;
+}
+section.Business .bus_info .bus_info_desc
+{
+    color: #999;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+section.Business .bus_info .bus_info_btn
+{
+    color: #fff;
+    background: #7cb62f;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    
+}
+@media (max-width:768px)
+{
+    section.Business
+    {
+        height: 300px;
+    }
+    section.Business .bus_info .bus_info_title
+{
+    font-size: 25px;
+}
+section.Business .bus_info .bus_info_desc
+{
+    width: 80%;
+    font-size: 18px;
+}
+}
+@media (min-width:769px) and (max-width:991px)
+{
+    section.Business
+    {
+        height: 310px;
+    }
+}
+
+/**********************************************Choose Section *********************************************************/
+section.Choose
+{
+    background: #f7f7f7;
+    position: relative;
+}
+section.Choose .c_panel
+{
+    background: #fff;
+    border: 1px solid #ddd;
+}
+section.Choose .c_panel ul
+{
+    background: #333;
+    color: #fff;
+    display: flex;
+}
+section.Choose .c_panel ul li
+{
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+section.Choose .c_panel .content .c_info img
+{
+    width: 40%;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+section.Choose .c_panel .content .c_info p
+{
+    color: #888;
+    width: 98%;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+section.Choose .c_panel .content .content2,
+section.Choose .c_panel .content .content3
+{
+    display: none;
+}
+section.Choose .video
+{
+    background: #636363;
+    height: 390px;
+    text-align: center;
+    padding-top: 130px;
+    color: #fff;
+}
+
+section.Choose .video i
+{
+    background: #f00;
+    padding: 15px;
+    cursor: pointer;
+}
+/****************************************************** Testimonial Section *******************************************************************************/
+
+section.Testimonial
+{
+    background-color: #333;
+}
+section.Testimonial .section_header .section_title
+{
+    color: #fff;
+}
+section.Testimonial .test_info
+{
+    width: 100%;
+    color: #fff;
+    background: #141414;
+    padding: 20px 10px;
+}
+section.Testimonial .test_info   img
+{
+    display: block;
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin: auto;
+    
+}
+section.Testimonial .test_info   .test_info_title
+{
+    font-size: 20px;
+}
+section.Testimonial .test_info   .test_info_span
+{
+    display: block;
+    color: #888;
+}
+section.Testimonial .test_info   i.icon
+{
+    color: #f2b100;
+    margin: 20px 0;
+}
+section.Testimonial .test_info   .test_info_desc
+{
+    color: #999;
+    
+}
+/************************************************************** Blog Section ****************************************************************************************/
+
+section.Blog .blog_info img
+{
+    width: 100%;
+}
+section.Blog .blog_info i.icon
+{
+    color: #7cb62f;
+    margin-right: 10px;
+}
+section.Blog .blog_info span
+{
+    color: #888;
+    margin-right: 10px;
+}
+section.Blog .blog_info  .blog_info_desc
+{
+    color: #888;
+}
+section.Blog .blog_info  .blog_info_btn
+{
+    color: #fff;
+    background: #7cb62f;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+/*********************************************************************** Pleasure Section ********************************************************************************************/
+
+section.Pleasure 
+{
+    background:#333;
+    color: #fff;
+    padding: 100px 0;
+}
+
+section.Pleasure .pleasure_info i
+{
+    color: #7cb62f;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+section.Pleasure .pleasure_info .pleasure_info_desc
+{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+section.Pleasure .pleasure_info .pleasure_info_desc span
+{
+    color: #7cb62f;
+}
+section.Pleasure .pleasure_info .pleasure_info_text
+{
+    font-style: italic;
+    color: #ddd;
+}
+/********************************************** next project section *************************************************************************************************/
+
+section.next
+{
+    background: #7cb62f;
+}
+section.next .next_desc
+{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 7px;
+}
+section.next .next_btn
+{
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+@media (max-width:768px)
+{
+    .next
+    {
+        text-align: center;
+    }
+}
+/****************************************************** Contact Section **************************************************************************/
+
+section.Contact
+{
+    background: #f7f7f7;
+}
+section.Contact .contact_info_desc
+{
+    color: #888;
+    line-height: 1.5;
+}
+section.Contact .contact_info_icon 
+{
+    display: block;
+    margin-bottom: 10px;
+}
+section.Contact .contact_info_icon i
+{
+    color: #7cb62f;
+    background: #fff;
+    border: 1px solid #7cb62f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+section.Contact .contact_info_icon:hover i
+{
+     color: #fff;
+    background: #7cb62f;
+}
+section.Contact form  .form-group
+{
+    display: flex;
+}
+section.Contact form  .form-group input:first-child
+{
+    margin-right: 10px;
+}
+section.Contact form .form-control:focus
+{
+    border-color: #888;
+}
+section.Contact form .form_btn
+{
+    display: block;
+    margin: 10px auto;
+    color: #fff;
+    background: #7cb62f;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+@media (max-width:575px)
+{
+    section.Contact form  .form-group
+    {
+        display: block;
+    }
+    section.Contact form  .form-group input
+    {
+        margin-bottom: 10px;
+    }
+}
+/************************************************************************** Footer Section *********************************************************************************************/
+
+footer
+{
+    background: #333;
+    color: #888;
+}
+footer h3
+{
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #888;  
+    margin-bottom: 30px;
+}
+footer i.footer_icon  
+{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+footer i.footer_icon:nth-of-type(1)
+{
+    background: #3b5998;
+}
+footer i.footer_icon:nth-of-type(2)
+{
+    background: #55acee;
+}
+footer i.footer_icon:nth-of-type(3)
+{
+    background: #dd4b39;
+}
+footer i.footer_icon:nth-of-type(4)
+{
+    background: #f00;
+}
+footer i.footer_icon:nth-of-type(5)
+{
+    background: #007bb5;
+}
+footer ul li
+{
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #888;  
+}
+footer .footer_btn 
+{
+    background: #696969;
+    color: #f7f7f7;
+    border: 0;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+footer img
+{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #888;
+    padding: 1px;
+}
+
+/************************************************** Copyrights section ***************************************************/
+
+.copyrights
+{
+    background: #252525;
+    color: #fff;
+}
+.copyrights .copy_desc i
+{
+    color: #7cb62f;
+}
+.copyrights ul 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.copyrights ul li
+{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.copyrights ul li:hover
+{
+    color: #7cb62f;
+}
+.copyrights p ,.copyrights ul
+{
+    margin: 0;
+}
+
+@media  (max-width:575px)
+{
+    .copyrights ul 
+    {
+        display: block;
+    }
+}
+
+/*********************************  scrollTop *************************************************/
+.scrollTop
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width:40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #7cb62f;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    
+    
+}
+/*  #7cb62f */
